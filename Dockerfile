@@ -3,7 +3,7 @@
 # Environment: Java (glibc support)
 # Minimum Panel Version: 0.6.0
 # ----------------------------------
-FROM        openjdk:12-alpine
+FROM        openjdk:12
 
 LABEL       author="Soren Dangaard" maintainer="joseph.md.sorensen@icloud.com"
 
