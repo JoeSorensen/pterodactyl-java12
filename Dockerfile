@@ -3,7 +3,7 @@
 # Environment: Java (glibc support)
 # Minimum Panel Version: 0.6.0
 # ----------------------------------
-FROM        openjdk:8-jre-slim
+FROM        openjdk:9.0.4-12-jre-slim
 
 LABEL       author="Soren Dangaard" maintainer="joseph.md.sorensen@icloud.com"
 
