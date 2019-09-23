@@ -3,12 +3,13 @@
 # Environment: Java (glibc support)
 # Minimum Panel Version: 0.6.0
 # ----------------------------------
-FROM        openjdk:12-alpine
+FROM        openjdk:13-jre-slim
 
 LABEL       author="Soren Dangaard" maintainer="joseph.md.sorensen@icloud.com"
 
-RUN apk add --no-cache --update curl ca-certificates openssl git tar bash sqlite fontconfig \
-    && adduser -D -h /home/container container
+RUN apt-get update -y \
+ && apt-get install -y curl ca-certificates openssl git tar sqlite fontconfig tzdata iproute2 \
+ && useradd -d /home/container -m container
  
 USER container
 ENV  USER=container HOME=/home/container
