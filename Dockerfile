@@ -3,9 +3,9 @@
 # Environment: Java (glibc support)
 # Minimum Panel Version: 0.6.0
 # ----------------------------------
-FROM        openjdk:10.0.2-13-jre-slim
+FROM        openjdk:13-jdk-slim
 
-LABEL       author="Michael Parker" maintainer="parker@pterodactyl.io"
+LABEL       author="Soren Dangaard" maintainer="joseph.md.sorensen@gmail.com"
 
 RUN apt-get update -y \
  && apt-get install -y curl ca-certificates openssl git tar sqlite fontconfig tzdata iproute2 \
